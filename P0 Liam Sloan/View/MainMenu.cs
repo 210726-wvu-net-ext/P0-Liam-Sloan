@@ -140,7 +140,6 @@ namespace View
             } while(running);
         }
 
-        // even more
         public void ViewAllUsers(){
             List<User> users = _appController.ViewAllUsers();
             foreach(var user in users){
@@ -158,8 +157,6 @@ namespace View
             Console.Clear();
         }
 
-
-        // even more
         public void WriteReview(string restaurant, int zipcode, string currentUser){
             Console.Clear();
             _appController.WriteReview(restaurant, zipcode, currentUser);
