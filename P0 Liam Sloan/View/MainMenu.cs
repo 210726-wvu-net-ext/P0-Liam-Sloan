@@ -20,7 +20,6 @@ namespace View
 
         private bool loggedIn = false;
         private string currentUser = "none";
-
         public void Start(){
             bool running = true;
 
@@ -141,13 +140,13 @@ namespace View
             } while(running);
         }
 
+        // even more
         public void ViewAllUsers(){
             List<User> users = _appController.ViewAllUsers();
             foreach(var user in users){
                 Console.WriteLine(user.Name);
             }
         }
-
         public void LogIn(string username, string password){
             Console.Clear();
             if(_appController.LogIn(username, password)){
@@ -159,6 +158,8 @@ namespace View
             Console.Clear();
         }
 
+
+        // even more
         public void WriteReview(string restaurant, int zipcode, string currentUser){
             Console.Clear();
             _appController.WriteReview(restaurant, zipcode, currentUser);
