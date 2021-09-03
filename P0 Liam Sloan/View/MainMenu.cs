@@ -20,10 +20,6 @@ namespace View
 
         private bool loggedIn = false;
         private string currentUser = "none";
-
-        /// <summary>
-        ///
-        /// </summary>
         public void Start(){
             bool running = true;
 
@@ -151,8 +147,6 @@ namespace View
                 Console.WriteLine(user.Name);
             }
         }
-
-        //even more
         public void LogIn(string username, string password){
             Console.Clear();
             if(_appController.LogIn(username, password)){
