@@ -22,7 +22,6 @@ namespace View
         private string currentUser = "none";
 
         /// <summary>
-        /// This is more documentation to add to the main menu...
         ///
         /// </summary>
         public void Start(){
